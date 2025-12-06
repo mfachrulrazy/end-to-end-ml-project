@@ -1,0 +1,2 @@
+# End to End Machine Learning Project for Predicting the Indonesia's House Pricing
+The goal of this repository is predicting house pricing based on the several variable using Machine Learning. The dataset from scraping rumah123.com
