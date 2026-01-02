@@ -25,14 +25,14 @@ model, feature_columns, feature_scaler, price_scaler = load_assets()
 if model is None:
     st.error("Model could not be loaded. Please check the model files.")
 else:
-    st.markdown("### Masukkan fitur-fitur rumah untuk prediksi harga:")
+    st.markdown("### Atur fitur-fitur Rumah untuk prediksi harga:")
     with st.form(key='prediction_form'):
         st.header("Fitur Rumah")
         col1, col2 = st.columns(2)
         with col1:
             area = st.number_input("Luas Tanah (m2)", min_value=30.0, max_value=1000.0, value=120.0, step=10.0)
             bedrooms = st.number_input("Jumlah Kamar Tidur", min_value=1, max_value=10, value=3, step=1)
-            garage = st.number_input("Luas Garasi (mobil)", min_value=0, max_value=5, value=1, step=1)
+            garage = st.number_input("Luas Garasi (jumlah mobil)", min_value=0, max_value=5, value=1, step=1)
         with col2:
             building_area = st.number_input("Luas Bangunan (m2)", min_value=20.0, max_value=800.0, value=90.0, step=10.0)
             bathrooms = st.number_input("Jumlah Kamar Mandi", min_value=1, max_value=8, value=1, step=1)
