@@ -6,6 +6,5 @@ scikit-learn
 matplotlib
 seaborn
 babel
-streamlit
+streamlit>=1.20.0
 joblib
-altair<5
